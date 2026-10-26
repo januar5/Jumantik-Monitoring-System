@@ -1,0 +1,236 @@
+/* ====== RESET DAN FONTS ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f3f5f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ====== CONTAINER UTAMA ====== */
+.login-container {
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+  width: 90%;
+  height: 600px;
+}
+
+/* ====== BAGIAN KIRI ====== */
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #4cc9f0, #4361ee);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.login-left img {
+  width: 80%;
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+.login-left h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.login-left p {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* ====== BAGIAN KANAN ====== */
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ====== LOGO ====== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #4361ee;
+  font-weight: 700;
+}
+
+/* ====== TEKS UTAMA ====== */
+h2 {
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* ====== FORM INPUT ====== */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.form-group svg {
+  width: 18px;
+  height: 18px;
+  color: #4361ee;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #d0d4e4;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #4361ee;
+  box-shadow: 0 0 5px rgba(67, 97, 238, 0.3);
+}
+
+/* ====== TOMBOL LOGIN ====== */
+.btn-login {
+  width: 100%;
+  background: #4361ee;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-login svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-login:hover {
+  background: #3651c9;
+}
+
+/* ====== ALERT ERROR ====== */
+.alert-error {
+  background-color: #ffe4e6;
+  color: #c9184a;
+  border-left: 4px solid #c9184a;
+  padding: 10px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.alert-error svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ====== LINK BAWAH ====== */
+.register-link,
+.back-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-link a {
+  color: #4361ee;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.back-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-link a:hover {
+  color: #4361ee;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .login-left {
+    display: none; /* sembunyikan ilustrasi di layar kecil */
+  }
+
+  .login-right {
+    width: 100%;
+    padding: 30px;
+  }
+}

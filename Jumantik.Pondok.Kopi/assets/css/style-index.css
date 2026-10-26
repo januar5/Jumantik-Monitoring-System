@@ -1,0 +1,277 @@
+/* ==== RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  background: #003366;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 55px;
+}
+
+.logo h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* ==== LOGIN DROPDOWN ==== */
+.dropdown {
+  position: relative;
+}
+
+.btn-login {
+  background: #007bff;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+
+.btn-login:hover {
+  background: #0056b3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #003366;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-content a:hover {
+  background: #007bff;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ==== HERO ==== */
+.hero {
+  background: linear-gradient(rgba(0, 30, 80, 0.6), rgba(0, 30, 80, 0.6)),
+    url("../../images/kelurahan-pondok-kopi.png") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 200px 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-text span {
+  color: #ffd700;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.hero-image img {
+  width: 340px;
+  max-width: 90%;
+}
+
+/* ==== ABOUT ==== */
+.about {
+  background: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about h3 {
+  color: #003366;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ==== FEATURES ==== */
+.features {
+  background: #eaf0f8;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features h3 {
+  color: #003366;
+  font-size: 26px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.feature-card h4 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* ==== CONTACT ==== */
+.contact {
+  background: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact h3 {
+  color: #003366;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ==== FOOTER ==== */
+.footer {
+  background: #00224d;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

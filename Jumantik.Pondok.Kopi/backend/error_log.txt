@@ -1,0 +1,9 @@
+[09-Feb-2026 16:47:12 Asia/Jakarta] === DELETE REQUEST START ===
+[09-Feb-2026 16:47:12 Asia/Jakarta] SESSION: {"user_id":122,"username":"RW 09","role":"rw","logged_in":true,"nama":"null","rw":"RW 09"}
+[09-Feb-2026 16:47:12 Asia/Jakarta] POST: {"id":"112"}
+[09-Feb-2026 16:47:12 Asia/Jakarta] GET: []
+[09-Feb-2026 16:47:12 Asia/Jakarta] USER: ID=122, ROLE=rw
+[09-Feb-2026 16:47:12 Asia/Jakarta] DELETE ID: 112
+[09-Feb-2026 16:47:12 Asia/Jakarta] Processing as RW
+[09-Feb-2026 16:47:12 Asia/Jakarta] RW Username: RW 09
+[09-Feb-2026 16:47:12 Asia/Jakarta] ERROR: Prepare failed - Unknown column 'r.nomor_rw' in 'field list'
